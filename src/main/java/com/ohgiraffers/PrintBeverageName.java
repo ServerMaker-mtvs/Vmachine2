@@ -6,6 +6,9 @@ public class PrintBeverageName {
 
         BeverageName result = BeverageName.findBeverageName(num);
 
+        if (result == null)
+            throw new IllegalArgumentException("NullPointerException 발생");
+
         System.out.println("선택한 음료 이름 : " + result);
     }
 
